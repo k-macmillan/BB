@@ -1,0 +1,37 @@
+# Directories
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+FileOpenOrder/
+
+# Keep the folder but ignore the contents
+LocalBuilds/*
+
+# Projects and Workspaces
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+*.code-workspace
+.vscode
+.vs
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+
+# Linux-specific
+Makefile
+CMakeLists.txt
+.tmp/
+
+# Crash reports
+*.log
