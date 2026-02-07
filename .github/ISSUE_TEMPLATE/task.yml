@@ -35,7 +35,7 @@ body:
     id: asset_path
     attributes:
       label: Proposed Asset Path / Location
-      description: e.g., /Content/Blueprints/Weapons/BP_NewGun or Map: L_Main_Menu
+      description: "e.g., /Content/Blueprints/Weapons/BP_NewGun or Map: L_Main_Menu"
       placeholder: /Content/... or Map name
   - type: textarea
     id: implementation_plan
