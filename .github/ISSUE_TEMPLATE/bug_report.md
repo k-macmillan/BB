@@ -27,6 +27,7 @@ A clear and concise description of what the bug is.
 3. Do '...'
 4. See error
 -->
+1. 
 
 ## Expected vs. Actual Behavior
 <!--
@@ -37,13 +38,12 @@ A clear and concise description of what the bug is.
 **Actual**: 
 
 ## Screenshots / Video
-<!--
-Drag and drop screenshots or a link to a private unlisted YouTube video here. Visuals save hours of debugging.
--->
+<!-- Drag and drop screenshots or a link to a private unlisted YouTube video here. Visuals save hours of debugging. -->
 
 ## Console Logs / Call Stack (If Crash)
 <details>
 <summary>Click to expand
+</summary>
 <!-- paste info below this comment -->
 
-</summary>
+</details>
