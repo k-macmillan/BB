@@ -1,0 +1,63 @@
+name: Proof of Concept
+description: Prototype a specific mechanic or "stitch" systems together
+title: "[POC] "
+labels: ["poc"]
+assignees: ["k-macmillan"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Category"
+  - type: checkboxes
+    id: category
+    attributes:
+      label: Category
+      description: Select all that apply
+      options:
+        - label: C++
+          required: false
+        - label: Blueprints
+          required: false
+        - label: Level Design / Environment
+          required: false
+        - label: UI / Widget
+          required: false
+        - label: Animation / Art
+          required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief overview of the specific system or mechanic you are trying to prove out.
+      placeholder: Describe the POC...
+    validations:
+      required: true
+  - type: textarea
+    id: stitch
+    attributes:
+      label: The "Stitch"
+      description: List the 2-3 existing components, actors, or systems you are combining.
+      placeholder: |
+        1. e.g., Combine BP_Character with the new Chaos Physics plugin.
+        2. e.g., Hook the Actor Instantiation logic into a simple UI button.
+    validations:
+      required: true
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success Criteria
+      description: What specific result determines if this concept is "proven"? e.g., Character successfully ragdolls on impact without crashing.
+      placeholder: "- [ ] Criterion 1"
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome / Decision
+      description: "(Fill this in after testing) Did it work? Should this be promoted to a full [TASK] or is it a SCRAP?"
+      placeholder: Worked / Scrap / Promote to task...
+  - type: textarea
+    id: research
+    attributes:
+      label: Research & Documentation
+      description: Paste links to the Unreal Engine 5 documentation, forum posts, or YouTube tutorials you used for this prototype.
+      placeholder: Links here

@@ -1,0 +1,62 @@
+name: Task / Feature
+description: Track a new feature or improvement
+title: "[TASK] "
+labels: ["enhancement"]
+assignees: ["k-macmillan"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Category"
+  - type: checkboxes
+    id: category
+    attributes:
+      label: Category
+      description: Select all that apply
+      options:
+        - label: C++
+          required: false
+        - label: Blueprints
+          required: false
+        - label: Level Design / Environment
+          required: false
+        - label: UI / Widget
+          required: false
+        - label: Animation / Art
+          required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what needs to be implemented.
+      placeholder: Describe the feature or improvement...
+    validations:
+      required: true
+  - type: input
+    id: asset_path
+    attributes:
+      label: Proposed Asset Path / Location
+      description: e.g., /Content/Blueprints/Weapons/BP_NewGun or Map: L_Main_Menu
+      placeholder: /Content/... or Map name
+  - type: textarea
+    id: implementation_plan
+    attributes:
+      label: Implementation Plan / Notes
+      description: "Example: 1. Create Child Actor of ... 2. Update logic in ... 3. Add variable for ..."
+      placeholder: |
+        1. 
+        2. 
+        3. 
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Definition of Done (Acceptance Criteria)
+      description: Outline the specific criteria that must be met to consider this task complete.
+      placeholder: "- [ ] Criterion 1"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References / Mockups
+      description: Paste links to tutorials, documentation, or inspiration images.
+      placeholder: Links here

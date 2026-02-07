@@ -1,0 +1,72 @@
+name: Bug Report
+description: Create a report to help fix this later
+title: "[BUG] "
+labels: ["bug"]
+assignees: ["k-macmillan"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Category"
+  - type: checkboxes
+    id: category
+    attributes:
+      label: Category
+      description: Select all that apply
+      options:
+        - label: C++
+          required: false
+        - label: Blueprints
+          required: false
+        - label: Level Design / Environment
+          required: false
+        - label: UI / Widget
+          required: false
+        - label: Animation / Art
+          required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the bug...
+    validations:
+      required: true
+  - type: input
+    id: asset_path
+    attributes:
+      label: Asset Path / Location
+      description: e.g., /Content/Blueprints/Characters/BP_Player or Map: L_Main_Menu
+      placeholder: /Content/... or Map name
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: "1. Open map '...' 2. Play in Editor (PIE) 3. Do '...' 4. See error"
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected vs. Actual Behavior
+      description: "Expected: Player jumps. Actual: Player falls through the floor and crashes the engine."
+      placeholder: |
+        **Expected**: 
+        **Actual**: 
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Video
+      description: Drag and drop screenshots or paste a link to a private unlisted YouTube video. Visuals save hours of debugging.
+      placeholder: Paste image or link here
+  - type: textarea
+    id: console_logs
+    attributes:
+      label: Console Logs / Call Stack (If Crash)
+      description: Paste crash logs or call stack below.
+      placeholder: Paste info here
